@@ -10,6 +10,16 @@ export default new Router({
       path: '/',
       name: 'Hello',
       component: Hello
+    },
+    {
+      path: '/blog',
+      name: 'BlogList',
+      component: require('../view/Blog/index.vue')
+    },
+    {
+      path: '/blog/:id',
+      name: 'BlogDetails',
+      component: require('../view/Blog/details.vue')
     }
   ]
 })
