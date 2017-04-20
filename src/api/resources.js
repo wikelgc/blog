@@ -1,9 +1,9 @@
 // import Vue from 'vue'
 import axios from 'axios'
 import Cookies from 'js-cookie'
-import * as types from '../store/types.js'
+// import * as types from '../store/types.js'
 import router from '../router'
-import store from '../store'
+// import store from '../store'
 // axios 配置
 axios.defaults.timeout = 5000
 axios.defaults.baseURL = 'http://test-api.mei57.com/api/doctor/'
@@ -30,7 +30,7 @@ axios.interceptors.response.use(
       switch (error.response.status) {
         case 401:
           // 返回 401 清除token信息并跳转到登录页面
-          store.commit(types.ACCOUNT_LOGOUT)
+          // store.commit(types.ACCOUNT_LOGOUT)
           router.replace({
             path: 'signin',
             query: {redirect: router.currentRoute.fullPath}
