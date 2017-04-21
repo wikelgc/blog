@@ -1,6 +1,6 @@
 <!-- list.vue -->
 <template>
 	<div class="blog-list">
-		list
+		blog-list
 	</div>
 </template>
